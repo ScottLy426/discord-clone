@@ -29,6 +29,7 @@ function Chat() {
           setMessages(snapshot.docs.map((doc) => doc.data()))
         );
     }
+    alert("Add channel first before messaging")
   }, [channelId]);
 
   const sendMessage = (e) => {
